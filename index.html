@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Application</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>My Favorite Movies</h1>
+</header>
+<div class="container">
+  <form id="movieForm">
+    <input type="text" id="name" placeholder="Movie Name" required>
+    <input type="text" id="genre" placeholder="Genre" required>
+    <input type="number" id="releaseYear" placeholder="Release Year" required>
+    <input type="text" id="director" placeholder="Director" required>
+    <textarea id="description" placeholder="Description" required></textarea>
+    <button type="submit">Add Movie</button>
+  </form>
+  <button id="sortButton">Sort by Release Year</button>
+  <select id="genreFilter" aria-label="Filter by Genre">
+    <option value="">Filter by Genre</option>
+    <option value="Science Fiction">Science Fiction</option>
+    <option value="Drama">Drama</option>
+  </select>
+  <div class="movies" id="moviesList"></div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
